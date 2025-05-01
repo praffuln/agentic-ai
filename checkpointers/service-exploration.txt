@@ -36,7 +36,7 @@ BedrockSessionSaver
 
 ----------- Summary  ------------- 
 
-Could not find any significant difference in all the seven MemorySavers. 
+Could not find any significant difference in all the seven MemorySavers. Seems all promising.
 
 In Memory is not good for Production, so we don't think too much on those. May be in notebook they seem workable.
 
