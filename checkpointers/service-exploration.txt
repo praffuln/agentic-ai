@@ -38,7 +38,7 @@ BedrockSessionSaver
 
 Could not find any significant difference in all the seven MemorySavers. Seems all promising.
 
-In Memory is not good for Production, so we don't think too much on those. May be in notebook they seem workable.
+In Memory and File Based are not good for Production, so we don't think too much on those. May be in notebook they seem workable.
 
 Difference is only in terms of storing the memory that is natively inherited by them (e..g. Aurora stores in table format, DocumentDB or ElastiCache stores in JSON format). 
 
