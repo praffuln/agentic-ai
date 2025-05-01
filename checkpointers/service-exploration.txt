@@ -1,0 +1,42 @@
+################ In Memory ################
+
+InMemorySaver
+
+Sqlite3
+
+################ AWS Persistance #############
+
+DynamoDB
+
+Aurora [Postgres]
+        Synchronous
+        Asynchronous
+
+Amazon DocumentDB Compatible with MongoDB
+        Synchronous
+        Asynchronous
+
+Amazon ElastiCache [Redis]
+        Synchronous
+        Asynchronous
+
+BedrockSessionSaver
+         TODO: Complete me !!!!
+
+
+
+Summary --------- 
+
+Could not find any significant difference in all the seven MemorySavers. 
+
+In Memory is not good for Production, so we don't think too much on those. May be in notebook they seem workable.
+
+Difference is only in terms of storing the memory that is natively inherited by them (e..g. Aurora stores in table format, DocumentDB or ElastiCache stores in JSON format). 
+
+In terms of performance, scalability, availability - all is AWS services so seems no issues in all Persistance memory Savers.
+
+We may go with DynamoDB or Aurora [Postgres] as both are available at use-case level. Can suggest first we start to use dynamodb, if WCU or RCU issues encounters we may shift to Aurora. 
+
+Amazon DocumentDB, ElastiCache, BedrockSessionSaver has no issue to use, in use-case level we need to enable these services [extra overhead]
+
+
