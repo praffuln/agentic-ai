@@ -1,12 +1,20 @@
+
+Working Demo for below MemorySavers in Agentic Application.
+Comparision between below MemorySavers in terms of performance, cost, availability, scalability and persistance behaviour.
+All Demo is on Google Cloud Models (Result will not match), in real projects we will use Amazon Models.
+
+
 ################ In Memory ################
 
 InMemorySaver
 
+################ File Based ################
+
 Sqlite3
 
-################ AWS Persistance #############
+################ AWS Services #############
 
-DynamoDB
+DynamoDB -- On Sandbox with lambda integration.
 
 Aurora [Postgres]
         Synchronous
@@ -25,7 +33,7 @@ BedrockSessionSaver
 
 
 
-Summary --------- 
+----------- Summary  ------------- 
 
 Could not find any significant difference in all the seven MemorySavers. 
 
@@ -35,8 +43,8 @@ Difference is only in terms of storing the memory that is natively inherited by 
 
 In terms of performance, scalability, availability - all is AWS services so seems no issues in all Persistance memory Savers.
 
-We may go with DynamoDB or Aurora [Postgres] as both are available at use-case level. Can suggest first we start to use dynamodb, if WCU or RCU issues encounters we may shift to Aurora. 
+We may go with DynamoDB or Aurora [Postgres] as both are available at use-case level. Can suggest first we start to use dynamodb, if WCU or RCU issues encounters we may shift to Aurora.
 
 Amazon DocumentDB, ElastiCache, BedrockSessionSaver has no issue to use, in use-case level we need to enable these services [extra overhead]
 
-
+By Using DynamoDB we can control the cost by it's serverless behaviour. 
