@@ -1,0 +1,19 @@
+py -m venv env
+
+
+env\scripts\activate
+
+
+
+set
+
+LANGCHAIN_API_KEY
+LANGCHAIN_TRACING_V2=true
+
+ set
+
+OPENAI_API_KEY
+
+set
+
+TAVILY_API_KEY
